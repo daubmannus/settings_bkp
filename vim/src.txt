@@ -1,2 +1,0 @@
-/usr/share/vim/vim<NN>/colors
-/usr/share/vim/vim<NN>/syntax
