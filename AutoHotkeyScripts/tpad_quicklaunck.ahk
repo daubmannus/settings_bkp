@@ -15,7 +15,7 @@ Run "C:\totalcmd\TOTALCMD.EXE"
 Exit
 
 #s::
-Run "c:\Users\theo\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ResophNotes.lnk"
+Run "c:\Users\theo\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Simplenote.lnk"
 Exit
 
 #`::
@@ -28,7 +28,7 @@ Exit
 
 #z::
 #Esc::
-Run "c:\Users\theo\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Cygwin Terminal.lnk"
+Run "c:\Users\theo\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Cygwin64 Terminal.lnk"
 Exit
 
 

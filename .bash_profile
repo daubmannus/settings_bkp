@@ -1,6 +1,3 @@
-#!/bin/bash
-# sorry for hashbang, it's just for correct language determining by npp
-
 # To the extent possible under law, the author(s) have dedicated all 
 # copyright and related and neighboring rights to this software to the 
 # public domain worldwide. This software is distributed without any warranty. 
@@ -8,7 +5,7 @@
 # with this software. 
 # If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
 
-# base-files version 4.2-4
+# base-files version 4.3-2
 
 # ~/.bash_profile: executed by bash(1) for login shells.
 
@@ -26,10 +23,15 @@
 
 # User dependent .bash_profile file
 
+# source the users bashrc if it exists
+if [ -f "${HOME}/.bashrc" ] ; then
+  source "${HOME}/.bashrc"
+fi
+
 # Set PATH so it includes user's private bin if it exists
- if [ -d "${HOME}/bin" ] ; then
-   PATH="${HOME}/bin:${PATH}"
- fi
+# if [ -d "${HOME}/bin" ] ; then
+#   PATH="${HOME}/bin:${PATH}"
+# fi
 
 # Set MANPATH so it includes users' private man if it exists
 # if [ -d "${HOME}/man" ]; then
@@ -40,11 +42,3 @@
 # if [ -d "${HOME}/info" ]; then
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
-
-# custom prompt: time and date added
-export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\] \[\e[30m\]\[\e[1m\]\D{%d.%m.%Y %T}\[\e[0m\]\n\$ '
-
-# source the users bashrc if it exists
-if [ -f "${HOME}/.bashrc" ] ; then
-  source "${HOME}/.bashrc"
-fi

@@ -28,10 +28,15 @@ alias lli='ls -alFi'
 
 alias scr='screen'
 
+alias cx='chmod +x' 
+
 alias e='vim'
 alias v='vim -M'
 
-alias ee='TERM=linux && ee'
+alias wg++='PATH=/cygdrive/c/mingw/mingw64/bin/:''"'"$PATH"'"'' g++'
+
+#alias ee='TERM=linux && ee'
+alias ee='sbl'
 
 alias he='hexedit'
 
@@ -39,6 +44,7 @@ alias md='mkdir'
 alias ren='prename'
 alias bkp='bkp.sh'
 alias cd-up='. cd-up' # cd to parent dir of symlink's target
+alias cd-to='. cd-to' # cd to THE dir of symlink's target 
 alias md5='md5deep -r'
 alias bcf='bc -l ~/.config/bcrc'
 alias googler='BROWSER=links googler -n 5'
@@ -55,9 +61,22 @@ alias less_='LESSOPEN="| pygmentize -f terminal256 -O style=native -g %s" less -
 alias pcat="pygmentize -f terminal256 -O style=native -g"
 alias cat_="pygmentize -f terminal256 -O style=native -g"
 
+
 # to run GUI applications
 alias chrome='cygstart chrome'
 alias firefox='cygstart firefox'
+
+# ssh
 alias ssh-nr='ssh root@192.168.1.200'
 alias ssh-urs='ssh theo@192.168.1.220'
 alias ssh-p='ssh pi@192.168.1.121'
+alias ssh-rl='ssh vagrant@192.168.10.10'
+alias ssh-tlx='ssh theo@192.168.1.135'
+
+alias ssh-nr-out='ssh root@212.80.57.11 -p 200'
+
+
+# ad hoc
+alias nmap="/cygdrive/c/Program\ Files\ \(x86\)/Nmap/nmap"
+alias rlab='. rlab'
+alias cal='cal -m'

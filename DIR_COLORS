@@ -1,3 +1,9 @@
+#########################
+# file from arkteion.
+# how it was set -- see rc files in git branch
+#########################
+
+
 # Coreutils version coreutils-8.26
 # If you do not modify this file, it will be updated when you upgrade
 # coreutils, using the contents of /etc/defaults/etc/DIR_COLORS.  Feel

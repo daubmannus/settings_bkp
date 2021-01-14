@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# custom prompt: time and date added
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\] \[\e[30m\]\[\e[1m\]\D{%d.%m.%Y %T}\[\e[0m\]\n\$ '
+
+# if subshell, add to prompt
+[[ $SHLVL > 1 ]] && \
+    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h [$SHLVL] \[\e[33m\]\w\[\e[0m\] \[\e[30m\]\[\e[1m\]\D{%d.%m.%Y %T}\[\e[0m\]\n\$ '
+  # export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h [$SHLVL] \[\e[33m\]\w\[\e[0m\]\n\$ '
+

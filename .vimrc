@@ -35,8 +35,8 @@ set hlsearch
 " set t_Sb=m
 " set t_Sf=m
 " WORD WRAPPING
-set wrap       " turn word wrapping on
-" set nowrap   " turn word wrapping off
+" set wrap       " turn word wrapping on
+set nowrap   " turn word wrapping off
 set linebreak  " don't split words
 set nolist     " list disables linebreak
 set textwidth=0
@@ -51,6 +51,8 @@ set listchars=eol:$
 """"""""""""""""""""""""""""""""""""
 " ':set [no]paste
 nnoremap <F2> :set invpaste paste?<CR>
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
 set pastetoggle=<F2>
 set showmode
 " Insert newline without entering insert mode
