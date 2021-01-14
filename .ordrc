@@ -1,0 +1,10 @@
+#!/bin/bash
+
+shopt -s expand_aliases
+. ~/.bashrc
+
+PATH="$ORD"/.bin:$PATH
+
+export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w \[\e[32m\][ord]\[\e[0m\] \[\e[30m\]\[\e[1m\]\D{%d.%m.%Y %T}\[\e[0m\]\n\$ '
+[[ $SHLVL > 1 ]] && \
+	export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h [$SHLVL] \[\e[33m\]\w \[\e[32m\][ord]\[\e[0m\] \[\e[30m\]\[\e[1m\]\D{%d.%m.%Y %T}\[\e[0m\]\n\$ '

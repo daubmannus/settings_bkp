@@ -1,0 +1,19 @@
+#shell -$SHELL
+#escape ^Jj
+# use ^a a instead
+#screen
+#screen $SHELL -c 'screen -X caption always "$STY"'
+
+screen
+#screen $SHELL -c 'screen -X caption always '"'"'%H:['"$STY"'] %n:%t  (%W) %=%Y- %m-%d %c'"'"
+
+altscreen on
+
+termcapinfo xterm ks@:ke@
+
+hardstatus alwayslastline "[%S] %n:%t  %W %=%Y-%m-%d %c [%h]"
+
+# Open new window in current dir
+bind n stuff "screen -X chdir $PWD;screen^M"
+#bind ^c stuff "screen -X chdir $PWD;screen^M"
+
