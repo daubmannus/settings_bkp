@@ -40,3 +40,5 @@ hi Special    cterm=NONE ctermfg=LightRed    	gui=NONE guifg=#ff0000
 hi Delimiter  cterm=NONE ctermfg=Yellow    	gui=NONE guifg=#ffff00    	
 hi LineNr     cterm=NONE ctermfg=DarkGrey    	gui=NONE guifg=#050505   	 
 
+hi Search     cterm=NONE ctermfg=Black    	gui=NONE guifg=#000000   	 
+
