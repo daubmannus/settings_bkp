@@ -88,10 +88,20 @@ hi WarningMsg	ctermfg=1
 hi WildMenu	ctermfg=0 ctermbg=3
 hi Folded	ctermfg=darkgrey ctermbg=NONE
 hi FoldColumn	ctermfg=darkgrey ctermbg=NONE
-hi DiffAdd	ctermbg=4
-hi DiffChange	ctermbg=5
-hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
-hi DiffText	cterm=bold ctermbg=1
+
+"hi DiffAdd	ctermbg=4
+"hi DiffChange	ctermbg=5
+"hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
+"hi DiffText	cterm=bold ctermbg=1
+hi DiffAdd	cterm=bold ctermfg=white ctermbg=brown
+hi DiffChange	cterm=bold ctermfg=white ctermbg=darkgray
+hi DiffDelete	cterm=bold ctermfg=gray ctermbg=darkgray 
+hi DiffText	cterm=bold ctermfg=white ctermbg=brown
+
+hi diffAdded   cterm=bold ctermfg=green
+hi diffRemoved   ctermfg=yellow
+hi diffLine   ctermfg=gray
+
 hi Comment	ctermfg=darkcyan
 hi Constant	ctermfg=brown
 hi Special	ctermfg=5
