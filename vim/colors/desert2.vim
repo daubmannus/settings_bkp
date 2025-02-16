@@ -98,6 +98,10 @@ hi DiffChange	cterm=bold ctermfg=white ctermbg=darkgray
 hi DiffDelete	cterm=bold ctermfg=gray ctermbg=darkgray 
 hi DiffText	cterm=bold ctermfg=white ctermbg=brown
 
+hi diffAdded   cterm=bold ctermfg=green
+hi diffRemoved   ctermfg=yellow
+hi diffLine   ctermfg=gray
+
 hi Comment	ctermfg=darkcyan
 hi Constant	ctermfg=brown
 hi Special	ctermfg=5
